@@ -2,7 +2,7 @@ import './home.css'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import Header from '../../components/header/header'
 import { useState} from 'react';
-import Bloc from '../../components/bloc/bloc'
+import Blocs from '../../components/bloc/bloc'
 
 
 
@@ -13,13 +13,19 @@ function Home(props) {
   return (
     
     <div class="container-fluid" id="john">
-      <div>
-        <Header userLogged={isLogged}/>
+      <div class="row flex-nowrap">
+        <div class="col-4 col-md-3 col-xl-2">
+          <Header userLogged={isLogged}/>
+        </div>
+        <div class="col-8">
+          <Blocs />
+        </div>
       </div>
-        <Bloc />
     </div>
 
   );
 }
+
+
 
 export default Home;

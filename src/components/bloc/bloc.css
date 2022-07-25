@@ -1,0 +1,15 @@
+.area {
+    width: 15em;
+    padding: 5px;
+    border: 1px solid #333;
+    background: rgba(49, 49, 49, 0.7);
+  }
+
+  #dropZone {
+    border: 2px dashed #bbb;
+    border-radius: 5px;
+    padding: 15px;
+    text-align: center;
+    font: 11pt bold;
+    color: #bbb;
+  }
